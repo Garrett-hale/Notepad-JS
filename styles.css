@@ -1,0 +1,127 @@
+:root {
+  --primary: #1ecbe1;
+  --secondary: #1e6ae1;
+  --font-one-size: 25px;
+  --font-two-size: 15px;
+  --font-one: arial;
+  --font-two: sans-serif,
+}
+
+ * {
+  margin: 0 auto;
+  padding: 0px;
+  font-family: var(--font-one);
+  font-size: var(--font-one-size);
+  /*border: 1px solid red;*//**/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--secondary);
+}
+
+#header-notepad {
+  height: 1000px;
+  padding-top: 1px;
+  /*background-size: cover;*/
+  text-align: center;
+  /*white-space: nowrap;*/
+  font-size: 25px;
+}
+
+.app-info {
+  font-size: 16px;
+  color: white;
+}
+
+#app-name {
+  margin-top: 25px;
+  font-size: 50px;
+  color: white;
+}
+
+#textarea-notepad {
+  background-color: white;
+  display: block;
+  margin-top: 2px;
+  width: 20%;
+  height: 150px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  overflow: clip;
+  resize: none;
+  border-radius: 10px;
+}
+
+#notes {
+  width: 100%;
+}
+
+.note-notepad {
+  background-color: white;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 20%;
+  height: 150px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  color: black;
+  font-size: 16px;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow: clip;
+  border-radius: 10px;
+}
+
+#notepad {
+  margin-top: 100px;
+}
+
+#notepad button {
+  display: block;
+  /*font-size: 12px;*/
+}
+
+.button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  display: block;
+  margin-top: 20px;
+  padding: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .note-notepad {
+    /*background-color: white;*/
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 80%;
+  }
+
+  #textarea-notepad {
+    width: 80%;
+  }
+
+}
